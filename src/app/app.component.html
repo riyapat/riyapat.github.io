@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button{
+      border:none;
+
+    }
+  </style>
+</head>
+<body>
+  <div *ngIf="division==0">
+  <h1 style="text-align: center;">Related Articles</h1>
+  <div  style="height:410px;width: 99%;position: relative;padding-left: 15px;padding-top: 10px;">
+    <div *ngFor="let number of numbers" id="card" style="height:400px;width: 285px;margin-left: 10px;display: inline-block;position: relative;">
+      <button style="position:absolute;bottom:10px;left:10px;font-size: 20px;background-color: transparent;color: whitesmoke;cursor: pointer;" (click)="linkage(number)">{{details[(number+a)%7]}}</button>
+
+    </div>
+  <button (click)="prev()" style="position:absolute;top:50%;left:5px;width:15px;height:15px;border-radius: 14px;background-color:tan;cursor: pointer;"><</button>
+  <button (click)="next()" style="position:absolute;top:50%;right:5px;width:15px;height:15px;border-radius: 14px;background-color:tan;cursor: pointer;">></button>
+</div>
+</div>
+<div *ngFor='let ins of [1,2,3,4,5,6,7];'>
+  <div *ngIf="division==ins">
+  <div  style="color: whitesmoke;font-size: 24px;background:url('https://assets.embibe.com/production/web-assets/assets/images/ParentLandingPage/parent_bg.jpg');white-space:pre-wrap;height:fit-content;width: 99%;position: relative;padding-left: 15px;padding-top: 10px;">
+    <h1 style="text-align: center;"><u>{{details[ins-1]}}</u></h1>
+    <button (click)="linkage(-1)" style="position: absolute;top:10px;right: 15px;background-color: skyblue;border-radius: 30px;width: fit-content;height:  fit-content;margin: 0px;padding: 0px;"><img  src="https://img.icons8.com/fluency/48/000000/circled-left-2.png"></button>
+    <br>
+    {{record[ins-1].para1}}
+    <br><br>
+    {{record[ins-1].para2}}
+    <br><br>
+    {{record[ins-1].para3}}
+    <br><br>
+    {{record[ins-1].para4}}
+    <br><br>
+    {{record[ins-1].para5}}
+    <br><br>
+    
+    </div> 
+</div>
+</div>
+</body>
+</html>

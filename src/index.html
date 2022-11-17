@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Projdev</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+  crossorigin="anonymous">
+  <style>
+      *{
+margin: 0;
+padding:0;
+      }
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+div.fixed {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: linear-gradient(to right, rgb(56, 12, 241), rgb(103, 30, 142));
+height:110px;
+z-index: 1;
+}
+aside {
+width: fit-content;
+height: 500px;
+padding-left: 15px;
+padding-bottom: 10px;
+
+float: left;
+
+background-color: white;
+}
+aside.scroll{
+overflow-x: hidden;
+overflow-y: scroll;
+color: white;
+}
+div.scroll{
+border-radius: 10px;
+overflow-x: hidden;
+overflow-y: scroll;
+height: 300px;
+margin-top: 10px;
+width: 200px;
+/*margin-left: 100px;*/
+margin-right: 10px;
+padding-top: 10px;
+}
+div.scroll::-webkit-scrollbar {
+width: 0px;
+}
+
+aside.scroll::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+aside.scroll::-webkit-scrollbar-track {
+box-shadow: inset 0 0 10px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+aside.scroll::-webkit-scrollbar-thumb {
+box-shadow: inset 0 0 12px grey; 
+border-radius: 10px;
+}
+.buton{
+  background-color: transparent;
+  margin-top: 100px;
+  margin-left: 100px;
+  color: whitesmoke;
+  height: 180px;
+  border: none;
+  border-radius: 150px;
+  padding-bottom: 70px;
+  width: 190px;
+  font-size: x-large;
+  position: relative;
+  z-index: -1;
+}
+.navbar{
+color:white;
+position: absolute;
+top:50px;
+margin-left: 65%;
+text-decoration: none;
+left: 30px;
+}
+h2{
+display: inline-block;
+font-size: xx-large;
+}
+h3{
+background: rgba(0,0,0,.1);
+padding: 5px ;
+margin-top: 20px;
+}
+    #card{
+      background-image: url("https://drive.google.com/uc?export=view&id=1Q1tt6WVCv87G1_DMvOzg3Fn2mj3dm37C");
+      color: whitesmoke;
+      background-color: #11acb5;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#login").on({
+      click: function(){
+        window.location.href="https://riyapat.github.io/about-us/login.html";
+      }
+    });
+    $("#regis").on({
+      click: function(){
+        window.location.href="https://riyapat.github.io/about-us/register.html";
+      }
+    });
+    
+    $("#about").on({
+      click: function(){
+        window.location.href="https://riyapat.github.io/about-us/";
+      }
+    });
+  });
+  function loads(link){
+    window.location.href=link;
+  }
+  </script>
+</head>
+<body >
+  <div class="fixed" >
+    <img src="https://drive.google.com/uc?export=view&id=1C9PjyS6RE6J8uP9oFtf7awrs9WGyC7Uz" style="margin-top: 15px;margin-left: 30px;"alt="">
+    <a class="navbar" id="login" >LOGIN</a>
+    <a class="navbar" id="about"style="left:100px">ABOUT US</a>
+    <a class="navbar" href="#contactus" style="left:200px">CONTACT US</a>
+    <a class="navbar" id="regis" style="left:320px">NEW REGISTRATION</a> 
+  </div>
+  <div style="background-color: white;height:fit-content;margin-top: 110px;padding-top:5px ;padding-bottom: 5px;text-align: center;">
+      Please check the Announcement corner regularly for latest updates and information.<br>
+      For any technical queries, please contact Helpdesk at <span style="color:red"> helpdesk[at]nsp[dot]gov[dot]in </span> or <span style="color:red">  0120 - 6619540</span><br>
+      <span style="color:blue"> (from 8 AM to 8 PM on all days, excluding holidays)</span>
+      <hr>
+  </div>
+  <div style="height:520px">
+      <aside class="scroll">
+          
+      <div class="scroll" style="background: linear-gradient(90deg,#0724a7 0%,#2947ce 50%,#0724a7 100%);">
+        <h1 style="text-align: center;">Table of Contents</h1>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">Pre Matric Scholarships Scheme for Minorities</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">Post Matric Scholarships Scheme for Minorities</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">Scholarship for Girl: Eligibility Criteria</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">Special Scholarship Scheme For North Eastern Region</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">Pre-matric Scholarship for Students with Disabilities</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">Post-matric Scholarship for Students with Disabilities</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">Pre-matric Scholarship for diffrent states</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">Post-matric Scholarship for diffrent states</div>
+          
+      </div>    
+      <div class="scroll" style="background: linear-gradient(144deg,#0f38a6 0%,#48e6b4 100%);">
+        <h1 style="text-align: center;">Latest Updates</h1>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">National Scholarship for PG ~Last date 31/12/2023</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">National Scholarship for Pre matrix ~Last date 28/12/2023</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">National Scholarship for Post Matrix ~Last date 28/12/2023</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">AICTE GATE Scholarship 2023 ~Last date 14/12/2023</div>
+        <div style="width:100%;background: rgba(255,255,255,.05);border-bottom:0.5px solid gray ;padding-top: 5px;padding-left:5px">Kotak Kanya Scholarship 2022: last date 25/12/2023</div>
+      </div>    
+      </aside>
+      <span style="position: relative;">
+        <img style="position: absolute;bottom: 0px;" width="100%" src="https://drive.google.com/uc?export=view&id=1dYjvFkAqJjEs6OcaIj2QxcajTlcIe1l5" alt="">
+        <button class="buton" onclick="loads('https://www.myscheme.gov.in/schemes/csss-cus')"  style="z-index:1;margin-left: 250px;background-color: transparent;padding-top: 50px;right: 35px;top:5px"> CENTRAL SCHEMES</button>
+        <button class="buton" onclick="loads('https://www.educorridor.com/ugc-aicte-schemes-scholarship/')" style="z-index:1;padding-bottom: 40px;margin-left: 100px;background-color: transparent;padding-top: 30px;right: 80px;bottom:25px"> UGC / AICTE SCHEMES</button>
+        <button class="buton" onclick="loads('https://entri.app/blog/national-state-level-government-scholarship-schemes-in-india/')" style="z-index:1;background-color: transparent;padding-top: 50px;right: 125px;top:30px">STATE SCHEMES</button>
+        <div style="width:82%;padding:10px 0;left:17%;margin-top:50px;position: relative;background-color: lightgrey;height:fit-content;text-align: center;color: whitesmoke;">
+            <div style="margin-left:2%;height:150px;"></div>
+            <div style="position: absolute;left:2%;top:10px;background-color: #5FB4EF;border-radius:4px;height:130px;width:22.5%;padding-top: 20px;"><h2>127.19 </h2>Lakhs<h3>TOTAL APPLICATIONS</h3> </div>
+            <div style="position: absolute;left:26.5%;top:10px;background-color: #954E9E;border-radius:4px;height:130px;width:22.5%;padding-top: 20px;"><h2>83.95 </h2>Lakhs<h3>VERIFIED APPLICATIONS</h3></div>
+            <div style="position: absolute;left:51%;top:10px;background-color: #11acb5;border-radius:4px;height:130px;width:22.5%;padding-top: 20px;"><h2>2940.77 </h2>Lakhs<h3>AMOUNT DISBURSED</h3></div>
+            <div style="position: absolute;left:75.5%;top:10px;background-color: #6cad5f;border-radius:4px;height:130px;width:22.5%;padding-top: 20px;"><h2>104 </h2>Lakhs<h3>TOTAL SCHEMES</h3></div>
+        </div>
+        </span>
+</div> 
+
+  <app-root></app-root>
+  
+    <footer  id="contactus">
+      <p>Author: Hege Refsnes<br>
+      <a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+</body>
+</html>
